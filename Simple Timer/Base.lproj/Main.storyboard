@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Simple_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPg-db-m8x">
+                                <rect key="frame" x="116" y="86" width="142" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="pjL-xK-Rd2">
+                                <rect key="frame" x="29" y="195" width="317" height="2.6666666666666572"/>
+                                <color key="progressTintColor" red="0.22205453729999999" green="0.5" blue="0.29321691799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeX-uJ-uIi">
+                                <rect key="frame" x="119" y="391.33333333333331" width="137" height="48"/>
+                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="26"/>
+                                <state key="normal" title="Start Timer">
+                                    <color key="titleColor" red="0.22205453729999999" green="0.5" blue="0.29321691799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="timerStartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="25p-bj-A8s"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tq7-1w-lNe">
+                                <rect key="frame" x="161" y="453.33333333333331" width="53" height="126.66666666666669"/>
+                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.22205453729999999" green="0.5" blue="0.29321691799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KL2-GU-9sH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjW-8v-Wcv">
+                                <rect key="frame" x="146" y="277.33333333333331" width="83" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UPg-db-m8x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="2MB-53-eLM"/>
+                            <constraint firstItem="QeX-uJ-uIi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4hR-Iq-uXi"/>
+                            <constraint firstItem="QeX-uJ-uIi" firstAttribute="top" secondItem="yjW-8v-Wcv" secondAttribute="bottom" constant="77" id="OX8-fW-jWp"/>
+                            <constraint firstItem="yjW-8v-Wcv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RrS-vu-fuJ"/>
+                            <constraint firstItem="yjW-8v-Wcv" firstAttribute="top" secondItem="pjL-xK-Rd2" secondAttribute="bottom" constant="80.5" id="Sen-Qr-1Db"/>
+                            <constraint firstItem="pjL-xK-Rd2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="VCK-hy-eFm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tq7-1w-lNe" secondAttribute="bottom" constant="198" id="WpO-ga-h71"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UPg-db-m8x" secondAttribute="trailing" constant="117" id="diz-6o-enR"/>
+                            <constraint firstItem="tq7-1w-lNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gfH-gs-gwJ"/>
+                            <constraint firstItem="UPg-db-m8x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="h2T-Ca-RCE"/>
+                            <constraint firstItem="pjL-xK-Rd2" firstAttribute="top" secondItem="UPg-db-m8x" secondAttribute="bottom" constant="76" id="hCO-Ok-nS8"/>
+                            <constraint firstItem="QeX-uJ-uIi" firstAttribute="top" secondItem="pjL-xK-Rd2" secondAttribute="bottom" constant="194.5" id="keG-wj-q3O"/>
+                            <constraint firstItem="tq7-1w-lNe" firstAttribute="top" secondItem="QeX-uJ-uIi" secondAttribute="bottom" constant="14" id="wFb-qO-vk8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pjL-xK-Rd2" secondAttribute="trailing" constant="13" id="yk0-rz-QaC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="resetButtonOutlet" destination="tq7-1w-lNe" id="Mxi-3d-54J"/>
+                        <outlet property="timerProgress" destination="pjL-xK-Rd2" id="je6-sO-jDD"/>
+                        <outlet property="timerStartButtonOutlet" destination="QeX-uJ-uIi" id="0Mo-Cp-cyH"/>
+                        <outlet property="timerStatusLabel" destination="yjW-8v-Wcv" id="Zbo-AJ-NCY"/>
+                        <segue destination="A0v-eF-fh3" kind="presentation" identifier="setTimeSegue" id="OQm-vU-rdo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+        </scene>
+        <!--Set Time View Controller-->
+        <scene sceneID="lDa-yj-Sa5">
+            <objects>
+                <viewController id="A0v-eF-fh3" customClass="SetTimeViewController" customModule="Simple_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Yz-Qg-Yi8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0zu-KN-LCD">
+                                <rect key="frame" x="50" y="208" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psF-Wz-moX">
+                                <rect key="frame" x="115.66666666666669" y="128" width="144" height="48"/>
+                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmV-Se-lOq">
+                                <rect key="frame" x="164.66666666666666" y="327" width="46" height="60"/>
+                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="35"/>
+                                <state key="normal" title="&lt;--">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="A0v-eF-fh3" eventType="touchUpInside" id="Fph-qT-77R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0zu-KN-LCD" firstAttribute="leading" secondItem="04c-BC-t0e" secondAttribute="leading" constant="50" id="9xK-lb-tMt"/>
+                            <constraint firstItem="0zu-KN-LCD" firstAttribute="top" secondItem="psF-Wz-moX" secondAttribute="bottom" constant="32" id="K6R-Hl-DUi"/>
+                            <constraint firstItem="jmV-Se-lOq" firstAttribute="top" secondItem="0zu-KN-LCD" secondAttribute="bottom" constant="89" id="Ky9-Pq-azL"/>
+                            <constraint firstItem="psF-Wz-moX" firstAttribute="centerX" secondItem="3Yz-Qg-Yi8" secondAttribute="centerX" id="L52-qM-F1p"/>
+                            <constraint firstItem="jmV-Se-lOq" firstAttribute="centerX" secondItem="3Yz-Qg-Yi8" secondAttribute="centerX" id="TFf-rg-rTT"/>
+                            <constraint firstItem="psF-Wz-moX" firstAttribute="top" secondItem="04c-BC-t0e" secondAttribute="top" constant="84" id="UwB-Ms-R60"/>
+                            <constraint firstItem="0zu-KN-LCD" firstAttribute="centerX" secondItem="3Yz-Qg-Yi8" secondAttribute="centerX" id="gJR-KD-ypV"/>
+                            <constraint firstItem="04c-BC-t0e" firstAttribute="trailing" secondItem="0zu-KN-LCD" secondAttribute="trailing" constant="50" id="lNt-nJ-qwP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="04c-BC-t0e"/>
+                    </view>
+                    <connections>
+                        <outlet property="setTimeField" destination="0zu-KN-LCD" id="ov9-sV-Tdg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9OF-8X-C0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="639" y="132"/>
+        </scene>
+    </scenes>
+</document>
